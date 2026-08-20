@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071117" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
+    <meta
+      name="description"
+      content="Política de privacitat d'Armory Relay: Daily Shop: accés de Riot, emmagatzematge local, serveis de contingut i publicitat."
+    />
+    <title>Política de privacitat · Armory Relay</title>
+    <link rel="canonical" href="https://gerardrey.github.io/privacy/ca/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://gerardrey.github.io/privacy/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://gerardrey.github.io/privacy/es/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ca"
+      href="https://gerardrey.github.io/privacy/ca/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://gerardrey.github.io/privacy/"
+    />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../assets/armory-relay-mark.png"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Salta al contingut</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../../" aria-label="Inici d'Armory Relay">
+          <img src="../../assets/armory-relay-mark.png" alt="" />
+          <span><strong>ARMORY RELAY</strong><small>DAILY SHOP</small></span>
+        </a>
+        <nav class="site-nav" aria-label="Navegació d'ajuda">
+          <a href="./" aria-current="page">Privacitat</a>
+          <a href="../../support/">Suport</a>
+          <a href="../../data-deletion/">Elimina les dades locals</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <section class="hero">
+        <div>
+          <span class="eyebrow"
+            >Política de privacitat · vigent des del 20 d'agost de 2026</span
+          >
+          <h1>Les teves dades, sempre a la vista.</h1>
+          <p class="hero-copy">
+            Armory Relay és una aplicació de només lectura sense cap base de
+            dades de comptes operada pel desenvolupador. Aquesta política
+            explica què tracta l'aplicació al dispositiu, quins serveis externs
+            reben peticions i com eliminar les dades locals.
+          </p>
+          <nav class="language-nav" aria-label="Idioma de la política">
+            <a href="../" lang="en">English</a>
+            <a href="../es/" lang="es">Español</a>
+            <a href="./" lang="ca" aria-current="page">Català</a>
+          </nav>
+        </div>
+        <aside class="hero-meta" aria-label="Dades de la política">
+          <span class="status-chip">Política pública</span>
+          <dl class="fact">
+            <dt>Responsable</dt>
+            <dd>Gerard Rey Mañas</dd>
+          </dl>
+          <dl class="fact">
+            <dt>Contacte</dt>
+            <dd>
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>
+            </dd>
+          </dl>
+          <dl class="fact">
+            <dt>Aplicació</dt>
+            <dd>Armory Relay: Daily Shop</dd>
+          </dl>
+          <dl class="fact">
+            <dt>Actualitzada</dt>
+            <dd>20 d'agost de 2026</dd>
+          </dl>
+        </aside>
+      </section>
+
+      <div class="policy-grid">
+        <aside class="policy-rail" aria-label="Contingut d'aquesta pàgina">
+          <strong>En aquesta pàgina</strong>
+          <a href="#abast">Abast</a>
+          <a href="#dades">Dades tractades</a>
+          <a href="#finalitats">Finalitats</a>
+          <a href="#serveis">Tercers</a>
+          <a href="#conservacio">Conservació</a>
+          <a href="#eliminacio">Elimina dades</a>
+          <a href="#drets">Els teus drets</a>
+          <a href="#seguretat">Seguretat</a>
+          <a href="#contacte">Contacte</a>
+        </aside>
+
+        <div class="policy-content">
+          <section id="abast" class="policy-section">
+            <span class="section-label">01 · Responsable i abast</span>
+            <h2>Qui n'és responsable</h2>
+            <p>
+              El responsable i desenvolupador és
+              <strong>Gerard Rey Mañas</strong>. Les consultes de privacitat es
+              poden enviar a
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>.
+              Aquesta política s'aplica a l'aplicació Android
+              <strong>Armory Relay: Daily Shop</strong>, paquet
+              <code>dev.valorant.storeviewer</code>, i, quan estigui disponible,
+              a la seva interfície web compatible.
+            </p>
+            <p>
+              Armory Relay és una aplicació independent i de només lectura per
+              consultar una botiga de VALORANT. No pot comprar productes, gastar
+              VALORANT Points, modificar un compte de Riot ni accedir al joc. No
+              disposa d'un backend propi de comptes. El desenvolupador no rep ni
+              emmagatzema contrasenyes de Riot, tokens d'autenticació, PUUID ni
+              dades personals de la botiga en servidors sota el seu control.
+            </p>
+          </section>
+
+          <section id="dades" class="policy-section">
+            <span class="section-label">02 · Mapa de dades</span>
+            <h2>Dades tractades per l'aplicació</h2>
+
+            <h3>Autenticació i sessió de Riot</h3>
+            <p>
+              Quan decideixes iniciar sessió, l'aplicació obre les pàgines
+              oficials d'autenticació de Riot Games en una WebView Android
+              aïllada. L'usuari, la contrasenya, els codis de verificació i les
+              dades d'autenticació en dos passos s'introdueixen a les pàgines de
+              Riot i s'envien directament a Riot. Armory Relay no ofereix cap
+              formulari propi de contrasenya i no llegeix, registra ni envia
+              aquestes credencials al desenvolupador.
+            </p>
+            <p>Després d'un inici de sessió correcte, l'aplicació tracta:</p>
+            <ul>
+              <li>tokens d'accés i identitat de Riot;</li>
+              <li>un entitlement token emès per Riot;</li>
+              <li>
+                el PUUID inclòs en el token signat, que identifica el compte del
+                jugador;
+              </li>
+              <li>
+                la caducitat dels tokens i el shard seleccionat o detectat; i
+              </li>
+              <li>
+                cookies d'autenticació de Riot i dades de sessió de la WebView
+                necessàries per intentar renovar la sessió silenciosament.
+              </li>
+            </ul>
+            <p>
+              El token d'identitat s'utilitza transitòriament per verificar
+              l'accés i detectar el shard. El token d'accés, entitlement token,
+              PUUID, caducitat i shard es desen localment com una sessió
+              xifrada. Només s'utilitzen per autenticar peticions a Riot,
+              obtenir la botiga, renovar la sessió i seleccionar la regió
+              correcta.
+            </p>
+
+            <h3>Botiga i memòria cau local</h3>
+            <p>
+              L'aplicació sol·licita als serveis Player Data de Riot les ofertes
+              diàries, les ofertes del Night Market quan està actiu i els
+              bundles destacats. Una resposta pot contenir identificadors,
+              preus, monedes, descomptes, temps de rotació i cosmètics
+              disponibles per al compte.
+            </p>
+            <p>
+              Es desa a IndexedDB una còpia processada de la botiga per mostrar
+              l'última informació disponible mentre s'intenta actualitzar. La
+              memòria cau no conté tokens d'accés ni entitlement tokens, però la
+              clau interna inclou el PUUID i l'idioma seleccionat. Per això, el
+              contingut de la botiga es tracta com a informació associada al
+              compte.
+            </p>
+
+            <h3>Contingut públic de VALORANT</h3>
+            <p>
+              Armory Relay descarrega de
+              <a
+                href="https://valorant-api.com/"
+                rel="noopener noreferrer external"
+                >valorant-api.com</a
+              >
+              informació pública de skins, armes, tiers, monedes, bundles,
+              chromas, nivells, imatges i versió del client de Riot. El catàleg
+              es demana en l'idioma triat i els identificadors d'oferta de Riot
+              es resolen localment.
+            </p>
+            <p>
+              Armory Relay no envia a valorant-api.com contrasenyes, tokens,
+              PUUID ni la botiga personal. Com en qualsevol servei d'Internet,
+              valorant-api.com i els proveïdors de contingut poden rebre dades
+              tècniques com l'adreça IP, agent d'usuari, URL sol·licitada,
+              idioma seleccionat i hora de la petició.
+            </p>
+
+            <h3>Preferències i memòria cau tècnica</h3>
+            <p>
+              L'idioma i la regió de Riot triada o detectada es desen en
+              emmagatzematge local. Les claus públiques de Riot per verificar
+              tokens, la versió actual del client i el catàleg públic de
+              cosmètics es desen a IndexedDB.
+            </p>
+
+            <h3>Mode demostració</h3>
+            <p>
+              El mode demostració genera una botiga d'exemple en memòria. No
+              crea una sessió de Riot, no tracta PUUID ni tokens, no utilitza
+              cookies de Riot i no contacta amb Riot ni valorant-api.com. Les
+              dades es descarten en sortir del mode o acabar el procés. Els
+              serveis publicitaris poden continuar funcionant segons s'explica a
+              continuació.
+            </p>
+
+            <h3>Publicitat i consentiment</h3>
+            <p>
+              La versió Android pot mostrar un bàner de Google AdMob a la
+              pantalla de botiga, també en el mode demostració. Utilitza Google
+              User Messaging Platform (UMP) per sol·licitar consentiment o
+              mostrar opcions de privacitat quan correspongui. La implementació
+              no demana cap anunci si UMP no indica que es pot fer.
+            </p>
+            <p>
+              Segons la informació de Google sobre Google Mobile Ads SDK, aquest
+              SDK recopila i comparteix automàticament, per a publicitat,
+              analítica i prevenció del frau:
+            </p>
+            <ul>
+              <li>
+                adreça IP, que pot estimar una ubicació aproximada del
+                dispositiu;
+              </li>
+              <li>
+                interaccions, com obertures, pulsacions i interaccions amb
+                anuncis;
+              </li>
+              <li>
+                diagnòstics, com temps d'inici, bloquejos i consum energètic; i
+              </li>
+              <li>
+                identificadors del dispositiu o compte, com Android Advertising
+                ID, App Set ID i altres identificadors aplicables.
+              </li>
+            </ul>
+            <p>
+              Segons la jurisdicció, el consentiment, la configuració del
+              dispositiu i la de Google, els anuncis poden ser personalitzats,
+              no personalitzats o limitats. Armory Relay no proporciona
+              deliberadament a AdMob contrasenyes de Riot, tokens d'accés,
+              entitlement tokens, PUUID, regió ni la botiga personal.
+            </p>
+            <p>
+              Quan UMP exigeix aquest punt d'accés, les opcions es poden revisar
+              a
+              <strong>Configuració → Publicitat i privacitat</strong>. Android
+              també permet gestionar o eliminar l'Advertising ID. Consulta la
+              <a
+                href="https://policies.google.com/privacy"
+                rel="noopener noreferrer external"
+                >Política de privacitat de Google</a
+              >
+              i la seva
+              <a
+                href="https://policies.google.com/technologies/ads"
+                rel="noopener noreferrer external"
+                >informació sobre publicitat</a
+              >.
+            </p>
+
+            <h3>Missatges enviats al desenvolupador</h3>
+            <p>
+              Si contactes per correu, el desenvolupador i el proveïdor de
+              correu tractaran l'adreça, el missatge, els adjunts i qualsevol
+              informació que hi incloguis voluntàriament. No enviïs
+              contrasenyes, tokens, cookies, codis de recuperació ni codis
+              d'autenticació en dos passos.
+            </p>
+
+            <h3>Dades que l'aplicació no sol·licita</h3>
+            <p>
+              Armory Relay no sol·licita contactes, ubicació GPS precisa,
+              càmera, micròfon, fotografies, SMS, registre de trucades, dades de
+              salut ni informació de pagament. Tampoc incorpora analítica pròpia
+              ni un servei propi d'informes d'errors. Els diagnòstics d'AdMob es
+              regeixen per la divulgació publicitària anterior.
+            </p>
+          </section>
+
+          <section id="finalitats" class="policy-section">
+            <span class="section-label">03 · Finalitats del tractament</span>
+            <h2>Per què s'utilitzen les dades</h2>
+            <ul>
+              <li>
+                Per oferir les funcions de botiga, autenticació, regió, idioma,
+                memòria cau i renovació sol·licitades per l'usuari.
+              </li>
+              <li>
+                Per verificar tokens signats per Riot i protegir l'aplicació i
+                la sessió contra usos indeguts.
+              </li>
+              <li>Per mostrar publicitat i prevenir frau publicitari.</li>
+              <li>Per respondre consultes de suport i privacitat.</li>
+              <li>Per complir obligacions legals aplicables.</li>
+            </ul>
+            <p>
+              Quan s'aplica el RGPD o una norma similar, les bases jurídiques
+              són la prestació sol·licitada, l'interès legítim del
+              desenvolupador a prestar i protegir el servei, el consentiment per
+              a publicitat o emmagatzematge quan sigui obligatori i el
+              compliment d'obligacions legals. El consentiment es pot retirar
+              mitjançant els controls disponibles sense afectar el tractament
+              anterior fet lícitament.
+            </p>
+          </section>
+
+          <section id="serveis" class="policy-section">
+            <span class="section-label">04 · Destinataris</span>
+            <h2>Serveis de tercers</h2>
+            <ul class="service-list">
+              <li>
+                <strong>Riot Games</strong><br />Autenticació oficial, emissió
+                de tokens, cookies de sessió, detecció del shard, entitlement i
+                botiga. Riot és responsable independent de les dades del compte
+                de Riot. Consulta l'
+                <a
+                  href="https://www.riotgames.com/es/privacy-notice"
+                  rel="noopener noreferrer external"
+                  >Avís de privacitat de Riot Games</a
+                >.
+              </li>
+              <li>
+                <strong>valorant-api.com i proveïdors de contingut</strong
+                ><br />Metadades i fitxers públics de cosmètics. No se'ls envia
+                deliberadament cap token de Riot ni PUUID.
+              </li>
+              <li>
+                <strong>Google AdMob i UMP</strong><br />Gestió del
+                consentiment, publicitat, analítica, lliurament, mesurament i
+                prevenció del frau.
+              </li>
+              <li>
+                <strong>GitHub Pages</strong><br />Aquest lloc de privacitat
+                està allotjat a GitHub Pages. GitHub pot tractar informació
+                habitual de servidor web segons la seva
+                <a
+                  href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                  rel="noopener noreferrer external"
+                  >Declaració general de privacitat</a
+                >.
+              </li>
+              <li>
+                <strong>Autoritats o assessors professionals</strong><br />Només
+                quan sigui raonablement necessari per complir la llei, protegir
+                drets o respondre una petició legal vàlida.
+              </li>
+            </ul>
+            <p>
+              El desenvolupador no ven credencials de Riot, tokens, PUUID ni
+              dades de botiga. Les transferències de Google Mobile Ads SDK poden
+              considerar-se “recopilació” o “compartició” publicitària segons
+              algunes lleis i les definicions de Google Play.
+            </p>
+          </section>
+
+          <section id="conservacio" class="policy-section">
+            <span class="section-label">05 · Cicle d'emmagatzematge</span>
+            <h2>Conservació</h2>
+            <ul class="service-list">
+              <li>
+                <strong>Sessió xifrada de Riot</strong><br />El token d'accés,
+                entitlement token, PUUID, caducitat i regió romanen a la volta
+                local fins a tancar sessió, detectar una sessió no vàlida,
+                esborrar les dades Android o desinstal·lar.
+              </li>
+              <li>
+                <strong>Dades de la WebView de Riot</strong><br />Les cookies i
+                dades de sessió romanen fins a tancar sessió, caducar a Riot,
+                esborrar dades o desinstal·lar.
+              </li>
+              <li>
+                <strong>Botiga personal processada</strong><br />Es desa a
+                IndexedDB local amb una clau que inclou PUUID i idioma fins a
+                esborrar la memòria cau, tancar la sessió mentre estigui activa,
+                esborrar dades o desinstal·lar. La caducitat de la sessió pot no
+                eliminar-la immediatament.
+              </li>
+              <li>
+                <strong>Catàleg públic i memòria cau tècnica</strong><br />El
+                catàleg i les claus de signatura es consideren actualitzats
+                durant unes 24 hores i la versió del client durant unes 12. Les
+                còpies poden romandre fins a reemplaçar-se, esborrar la memòria
+                cau, esborrar dades o desinstal·lar.
+              </li>
+              <li>
+                <strong>Idioma i regió</strong><br />Romanen en emmagatzematge
+                local fins a canviar-los, esborrar dades o desinstal·lar.
+              </li>
+              <li>
+                <strong>Dades de demostració</strong><br />Romanen en memòria
+                fins a sortir del mode demostració o acabar el procés.
+              </li>
+              <li>
+                <strong>Publicitat i consentiment</strong><br />Es conserven al
+                SDK i sistemes de Google segons les opcions, la configuració del
+                dispositiu i les polítiques de Google.
+              </li>
+              <li>
+                <strong>Correu de suport o privacitat</strong><br />Es conserva
+                només durant el temps necessari per resoldre la consulta i
+                complir obligacions legals.
+              </li>
+            </ul>
+          </section>
+
+          <section id="eliminacio" class="policy-section">
+            <span class="section-label">06 · Controls del dispositiu</span>
+            <h2>Com eliminar les dades</h2>
+            <ol>
+              <li>
+                <strong>Esborrar la botiga i el catàleg:</strong> selecciona
+                <strong>Configuració → Esborrar memòria cau</strong>. Això no
+                tanca la sessió.
+              </li>
+              <li>
+                <strong>Eliminar la sessió local de Riot:</strong> selecciona
+                <strong>Configuració → Tancar sessió</strong>. Això elimina la
+                sessió xifrada, les cookies i dades de la WebView, i la botiga
+                del compte actiu. Poden romandre el catàleg públic, l'idioma, la
+                regió i les opcions publicitàries de Google.
+              </li>
+              <li>
+                <strong>Eliminar totes les dades locals d'Armory Relay:</strong>
+                utilitza
+                <strong
+                  >Informació de l'aplicació Android → Emmagatzematge → Esborrar
+                  dades</strong
+                >
+                o desinstal·la l'aplicació.
+              </li>
+            </ol>
+            <p>
+              Armory Relay no crea ni manté cap compte propi en un servidor.
+              Esborrar les dades locals no elimina el compte independent de
+              Riot. L'accés, rectificació o eliminació del compte Riot s'ha de
+              sol·licitar directament pels canals oficials de Riot.
+            </p>
+            <p>
+              Per sol·licitar l'eliminació d'informació enviada directament al
+              desenvolupador, com un correu de suport, escriu a
+              <a
+                href="mailto:privacy@riftscope.com?subject=Eliminaci%C3%B3%20de%20dades%20d%27Armory%20Relay"
+                >privacy@riftscope.com</a
+              >
+              amb l'assumpte “Eliminació de dades d'Armory Relay”. No incloguis
+              contrasenyes ni tokens.
+            </p>
+            <a class="action-link" href="../../data-deletion/"
+              >Obre la guia d'eliminació</a
+            >
+          </section>
+
+          <section id="drets" class="policy-section">
+            <span class="section-label">07 · Control de l'usuari</span>
+            <h2>Els teus drets de privacitat</h2>
+            <p>
+              Segons la teva ubicació, pots tenir dret d'accés, rectificació,
+              supressió, limitació, oposició, portabilitat i retirada del
+              consentiment. Per a dades locals, utilitza els controls anteriors;
+              per al compte Riot, els canals de Riot; per a publicitat, els
+              controls de Google i Android; i per a informació enviada al
+              desenvolupador,
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>.
+            </p>
+            <p>
+              També pots reclamar davant l'autoritat de protecció de dades
+              competent. A Espanya és l'<a
+                href="https://www.aepd.es/"
+                rel="noopener noreferrer external"
+                >Agència Espanyola de Protecció de Dades</a
+              >.
+            </p>
+
+            <h3>Menors</h3>
+            <p>
+              Armory Relay no està dissenyada ni dirigida a menors de 13 anys ni
+              a persones que no arribin a l'edat mínima aplicable per utilitzar
+              un compte Riot sense autorització parental. Els usuaris han de
+              complir els requisits d'edat i compte de Riot. Un pare, mare o
+              tutor que cregui que un menor ha enviat informació al
+              desenvolupador pot contactar amb l'adreça de privacitat anterior.
+            </p>
+          </section>
+
+          <section id="seguretat" class="policy-section">
+            <span class="section-label">08 · Protecció</span>
+            <h2>Seguretat i transferències</h2>
+            <p>
+              L'aplicació Android xifra els secrets de sessió amb AES-256-GCM i
+              una clau no exportable d'Android Keystore. Les comunicacions
+              utilitzen HTTPS/TLS. La WebView de Riot s'executa en un procés
+              aïllat, restringeix la navegació, desactiva la depuració i el
+              contingut mixt, bloqueja captures durant l'autenticació i esborra
+              cookies i dades WebView en tancar sessió. Els valors sensibles no
+              s'inclouen als logs i la còpia de seguretat Android està
+              desactivada.
+            </p>
+            <p>
+              Cap mesura garanteix una protecció absoluta. Protegeix el
+              dispositiu, el correu i el compte Riot, activa l'autenticació
+              multifactor i no comparteixis credencials ni tokens.
+            </p>
+            <p>
+              Riot, Google, GitHub, valorant-api.com i les seves
+              infraestructures poden tractar dades fora del teu país. Les seves
+              polítiques expliquen ubicacions, garanties i mecanismes de
+              transferència. Armory Relay no transfereix la sessió Riot ni la
+              botiga a cap backend controlat pel desenvolupador.
+            </p>
+          </section>
+
+          <section id="contacte" class="policy-section">
+            <span class="section-label">09 · Estat de la política</span>
+            <h2>Canvis i contacte</h2>
+            <p>
+              Aquesta política es pot actualitzar quan canviïn l'aplicació, els
+              proveïdors o els requisits legals. S'actualitzarà la data superior
+              i, quan correspongui, els canvis rellevants es comunicaran
+              mitjançant l'aplicació o la seva fitxa de botiga.
+            </p>
+            <p>
+              Les consultes de privacitat es poden enviar a
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>.
+            </p>
+            <p>
+              Armory Relay és una aplicació comunitària independent. No està
+              afiliada, avalada, patrocinada ni aprovada per Riot Games. Riot
+              Games, VALORANT i els noms i marques relacionats pertanyen als
+              titulars respectius.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© 2026 Gerard Rey Mañas</p>
+        <p>Política de privacitat · Vigent des del 20 d'agost de 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

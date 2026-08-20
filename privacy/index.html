@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071117" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
+    <meta
+      name="description"
+      content="Privacy Policy for Armory Relay: Daily Shop, including Riot sign-in, local storage, content services and advertising."
+    />
+    <title>Privacy Policy · Armory Relay</title>
+    <link rel="canonical" href="https://gerardrey.github.io/privacy/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://gerardrey.github.io/privacy/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://gerardrey.github.io/privacy/es/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ca"
+      href="https://gerardrey.github.io/privacy/ca/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://gerardrey.github.io/privacy/"
+    />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="icon" type="image/png" href="../assets/armory-relay-mark.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../" aria-label="Armory Relay home">
+          <img src="../assets/armory-relay-mark.png" alt="" />
+          <span><strong>ARMORY RELAY</strong><small>DAILY SHOP</small></span>
+        </a>
+        <nav class="site-nav" aria-label="Support navigation">
+          <a href="./" aria-current="page">Privacy</a>
+          <a href="../support/">Support</a>
+          <a href="../data-deletion/">Delete local data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Privacy policy · effective 20 August 2026</span>
+          <h1>Your data stays in view.</h1>
+          <p class="hero-copy">
+            Armory Relay is a read-only companion with no developer-operated
+            account database. This policy explains what the app processes on
+            your device, which external services receive requests, and how to
+            remove local data.
+          </p>
+          <nav class="language-nav" aria-label="Policy language">
+            <a href="./" lang="en" aria-current="page">English</a>
+            <a href="./es/" lang="es">Español</a>
+            <a href="./ca/" lang="ca">Català</a>
+          </nav>
+        </div>
+        <aside class="hero-meta" aria-label="Policy details">
+          <span class="status-chip">Public policy</span>
+          <dl class="fact">
+            <dt>Controller</dt>
+            <dd>Gerard Rey Mañas</dd>
+          </dl>
+          <dl class="fact">
+            <dt>Contact</dt>
+            <dd>
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>
+            </dd>
+          </dl>
+          <dl class="fact">
+            <dt>App</dt>
+            <dd>Armory Relay: Daily Shop</dd>
+          </dl>
+          <dl class="fact">
+            <dt>Updated</dt>
+            <dd>20 August 2026</dd>
+          </dl>
+        </aside>
+      </section>
+
+      <div class="policy-grid">
+        <aside class="policy-rail" aria-label="On this page">
+          <strong>On this page</strong>
+          <a href="#scope">Scope</a>
+          <a href="#data">Data handled</a>
+          <a href="#purposes">Purposes</a>
+          <a href="#services">Third parties</a>
+          <a href="#retention">Retention</a>
+          <a href="#deletion">Delete data</a>
+          <a href="#rights">Your rights</a>
+          <a href="#security">Security</a>
+          <a href="#contact">Contact</a>
+        </aside>
+
+        <div class="policy-content">
+          <section id="scope" class="policy-section">
+            <span class="section-label">01 · Controller and scope</span>
+            <h2>Who is responsible</h2>
+            <p>
+              The controller and developer is <strong>Gerard Rey Mañas</strong>.
+              Privacy enquiries can be sent to
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>.
+              This policy applies to the Android application
+              <strong>Armory Relay: Daily Shop</strong>, package
+              <code>dev.valorant.storeviewer</code>, and, where available, its
+              web-compatible interface.
+            </p>
+            <p>
+              Armory Relay is an independent, read-only companion for viewing a
+              VALORANT store. It cannot purchase products, spend VALORANT
+              Points, change a Riot account, or access the game itself. The app
+              has no proprietary user-account backend. The developer does not
+              receive or store Riot passwords, authentication tokens, PUUIDs, or
+              personal store data on developer-controlled servers.
+            </p>
+          </section>
+
+          <section id="data" class="policy-section">
+            <span class="section-label">02 · Data map</span>
+            <h2>Data handled by the app</h2>
+
+            <h3>Riot authentication and session</h3>
+            <p>
+              When you choose to sign in, the app opens Riot Games' official
+              authentication pages in an isolated Android WebView. Your Riot
+              username, password, verification codes and two-factor
+              authentication information are entered on Riot's pages and sent
+              directly to Riot. Armory Relay does not provide its own password
+              form and does not read, log, or send those credentials to the
+              developer.
+            </p>
+            <p>After a successful sign-in, the application processes:</p>
+            <ul>
+              <li>Riot access and identity tokens;</li>
+              <li>an entitlement token issued by Riot;</li>
+              <li>
+                the PUUID contained in the signed token, identifying the Riot
+                player account;
+              </li>
+              <li>token expiry and the selected or detected Riot shard; and</li>
+              <li>
+                Riot authentication cookies and WebView session data needed to
+                attempt silent session renewal.
+              </li>
+            </ul>
+            <p>
+              The identity token is used transiently to verify sign-in and
+              detect the shard. The access token, entitlement token, PUUID,
+              expiry and shard are stored locally as an encrypted session. They
+              are used only to authenticate Riot requests, obtain the
+              storefront, renew the session and select the correct region.
+            </p>
+
+            <h3>Storefront and local cache</h3>
+            <p>
+              The app requests the player's daily offers, Night Market offers
+              when active, and featured bundles from Riot Player Data services.
+              A response can include offer IDs, prices, currencies, discounts,
+              rotation times and cosmetic items available to the account.
+            </p>
+            <p>
+              A mapped copy of this store is cached in IndexedDB on the device,
+              allowing the last available store to appear while a refresh is
+              attempted. The cache contains no Riot access or entitlement token,
+              but its internal key includes the PUUID and selected language.
+              Store contents are therefore treated as account-related data.
+            </p>
+
+            <h3>Public VALORANT content</h3>
+            <p>
+              Armory Relay downloads public catalog information from
+              <a
+                href="https://valorant-api.com/"
+                rel="noopener noreferrer external"
+                >valorant-api.com</a
+              >, including skin, weapon, tier, currency, bundle, chroma, level,
+              image and Riot client-version information. The catalog is
+              requested in the selected language and Riot offer IDs are resolved
+              locally.
+            </p>
+            <p>
+              Armory Relay does not send Riot passwords, tokens, the PUUID or
+              the player's personal store to valorant-api.com. Like any Internet
+              service, valorant-api.com and media or content-delivery hosts may
+              receive technical network data such as IP address, user agent,
+              requested URL, selected language and request time.
+            </p>
+
+            <h3>Preferences and technical cache</h3>
+            <p>
+              The selected language and selected or detected Riot region are
+              stored in local application storage. Public Riot signing keys used
+              to verify tokens, the current Riot client version and the public
+              cosmetic catalog are cached in IndexedDB.
+            </p>
+
+            <h3>Demo mode</h3>
+            <p>
+              Demo mode creates sample store information in memory. It does not
+              create a Riot session, process a PUUID or tokens, use Riot
+              authentication cookies, or contact Riot or valorant-api.com. The
+              sample is discarded when Demo mode is exited or the app process
+              ends. Advertising services may still operate in Demo mode as
+              described below.
+            </p>
+
+            <h3>Advertising and consent</h3>
+            <p>
+              The Android version may show a Google AdMob banner on the store
+              screen, including in Demo mode. It uses Google's User Messaging
+              Platform (UMP) to request consent or show privacy choices where
+              required. The implementation does not request an ad unless UMP
+              reports that ads may be requested.
+            </p>
+            <p>
+              According to Google's disclosure for the Google Mobile Ads SDK,
+              the SDK automatically collects and shares data for advertising,
+              analytics and fraud prevention, including:
+            </p>
+            <ul>
+              <li>
+                IP address, which may estimate a device's approximate location;
+              </li>
+              <li>
+                product interactions, such as app launches, taps and ad
+                interactions;
+              </li>
+              <li>
+                diagnostics, such as launch time, hang rate and energy use; and
+              </li>
+              <li>
+                device or account identifiers, including Android advertising ID,
+                App Set ID and other applicable device identifiers.
+              </li>
+            </ul>
+            <p>
+              Depending on jurisdiction, consent choice, device settings and
+              Google's configuration, ads may be personalized, non-personalized
+              or limited. Armory Relay does not deliberately pass Riot
+              passwords, access tokens, entitlement tokens, PUUID, region or
+              personal storefront contents to AdMob.
+            </p>
+            <p>
+              You can review the privacy options made available for your device
+              from
+              <strong>Settings → Ads and privacy</strong> whenever UMP requires
+              that entry point. You can also manage or delete the Android
+              advertising ID in Android settings. See Google's
+              <a
+                href="https://policies.google.com/privacy"
+                rel="noopener noreferrer external"
+                >Privacy Policy</a
+              >
+              and
+              <a
+                href="https://policies.google.com/technologies/ads"
+                rel="noopener noreferrer external"
+                >advertising information</a
+              >.
+            </p>
+
+            <h3>Messages sent to the developer</h3>
+            <p>
+              If you contact the developer by email, the developer and email
+              provider process your email address, message, attachments, and any
+              technical or account information you voluntarily include. Never
+              email passwords, authentication tokens, cookies, recovery codes or
+              two-factor codes.
+            </p>
+
+            <h3>Data the app does not request</h3>
+            <p>
+              Armory Relay does not request access to contacts, precise GPS
+              location, camera, microphone, photos, SMS, call logs, health
+              information or payment information. It includes no proprietary
+              analytics or crash-reporting service. AdMob diagnostics remain
+              subject to the advertising disclosure above.
+            </p>
+          </section>
+
+          <section id="purposes" class="policy-section">
+            <span class="section-label">03 · Processing purposes</span>
+            <h2>Why data is used</h2>
+            <ul>
+              <li>
+                To provide store viewing, authentication, region, language,
+                caching and session renewal expressly requested by the user.
+              </li>
+              <li>
+                To verify Riot-signed tokens and protect the application and
+                account session from misuse.
+              </li>
+              <li>To display advertising and prevent advertising fraud.</li>
+              <li>To respond to support and privacy enquiries.</li>
+              <li>To comply with applicable legal obligations.</li>
+            </ul>
+            <p>
+              Where the GDPR or similar law applies, the legal bases are
+              performance of the service requested by the user, the developer's
+              legitimate interests in providing and securing that service,
+              consent for advertising or local storage where legally required,
+              and compliance with legal obligations. Consent can be withdrawn
+              through the available privacy controls without affecting
+              processing already carried out lawfully.
+            </p>
+          </section>
+
+          <section id="services" class="policy-section">
+            <span class="section-label">04 · Recipients</span>
+            <h2>Third-party services</h2>
+            <ul class="service-list">
+              <li>
+                <strong>Riot Games</strong><br />Official authentication, token
+                issuance, session cookies, shard detection, entitlements and
+                storefront data. Riot is an independent controller of Riot
+                account data. See the
+                <a
+                  href="https://www.riotgames.com/en/privacy-notice"
+                  rel="noopener noreferrer external"
+                  >Riot Games Privacy Notice</a
+                >.
+              </li>
+              <li>
+                <strong>valorant-api.com and content-delivery hosts</strong
+                ><br />Public cosmetic metadata and media. No Riot
+                authentication token or PUUID is intentionally sent to this
+                service.
+              </li>
+              <li>
+                <strong>Google AdMob and UMP</strong><br />Consent management,
+                advertising, analytics, delivery, measurement and fraud
+                prevention, as described above.
+              </li>
+              <li>
+                <strong>GitHub Pages</strong><br />This policy site is hosted by
+                GitHub Pages. GitHub may process ordinary web-server information
+                when the site is visited under its
+                <a
+                  href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                  rel="noopener noreferrer external"
+                  >General Privacy Statement</a
+                >.
+              </li>
+              <li>
+                <strong>Authorities or professional advisers</strong><br />Only
+                if reasonably necessary to comply with law, protect legal rights
+                or answer a valid legal request.
+              </li>
+            </ul>
+            <p>
+              The developer does not sell Riot credentials, authentication
+              tokens, PUUIDs or storefront data. Transfers performed by the
+              Google Mobile Ads SDK may constitute “collection” or “sharing” for
+              advertising under some privacy laws and Google Play's Data safety
+              definitions.
+            </p>
+          </section>
+
+          <section id="retention" class="policy-section">
+            <span class="section-label">05 · Storage lifecycle</span>
+            <h2>Retention</h2>
+            <ul class="service-list">
+              <li>
+                <strong>Encrypted Riot session</strong><br />Access token,
+                entitlement token, PUUID, expiry and region remain in the local
+                vault until sign-out, invalid-session cleanup, Android app-data
+                clearing or uninstall.
+              </li>
+              <li>
+                <strong>Riot WebView data</strong><br />Riot cookies and WebView
+                session data remain until sign-out, expiry by Riot, Android
+                app-data clearing or uninstall.
+              </li>
+              <li>
+                <strong>Mapped personal storefront</strong><br />Stored in local
+                IndexedDB and keyed by PUUID and language until cache clearing,
+                sign-out while that session is active, Android app-data clearing
+                or uninstall. Session expiry alone may not immediately remove
+                this cache.
+              </li>
+              <li>
+                <strong>Public catalog and technical cache</strong><br />Catalog
+                and Riot signing keys are considered fresh for about 24 hours,
+                and client-version entries for about 12 hours. Stored copies may
+                remain until replacement, cache clearing, Android app-data
+                clearing or uninstall.
+              </li>
+              <li>
+                <strong>Language and region</strong><br />Remain in local
+                storage until changed, Android app-data clearing or uninstall.
+              </li>
+              <li>
+                <strong>Demo data</strong><br />Remains in memory until Demo
+                mode is exited or the process ends.
+              </li>
+              <li>
+                <strong>Advertising and consent data</strong><br />Retained by
+                Google SDK storage and Google systems according to privacy
+                choices, device settings and Google's retention policies.
+              </li>
+              <li>
+                <strong>Support or privacy email</strong><br />Retained only as
+                long as necessary to resolve the enquiry and meet applicable
+                legal obligations.
+              </li>
+            </ul>
+          </section>
+
+          <section id="deletion" class="policy-section">
+            <span class="section-label">06 · Device controls</span>
+            <h2>How to delete data</h2>
+            <ol>
+              <li>
+                <strong>Clear the cached store and catalog:</strong> choose
+                <strong>Settings → Clear cache</strong>. This does not sign you
+                out.
+              </li>
+              <li>
+                <strong>Delete the local Riot session:</strong> choose
+                <strong>Settings → Sign out</strong>. This removes the encrypted
+                Riot session, authentication cookies and WebView data, and the
+                active account's stored storefront. Public catalog cache,
+                language, region and Google advertising choices may remain.
+              </li>
+              <li>
+                <strong>Delete all local Armory Relay data:</strong> use Android
+                <strong>App info → Storage → Clear data</strong>, or uninstall
+                the app.
+              </li>
+            </ol>
+            <p>
+              Armory Relay does not create or maintain its own server-side user
+              account. Deleting local Armory Relay data does not delete the
+              independent Riot account. Riot-account access, correction or
+              deletion must be requested directly through Riot's official
+              support and privacy channels.
+            </p>
+            <p>
+              To request deletion of information sent directly to the developer,
+              such as a support email, contact
+              <a
+                href="mailto:privacy@riftscope.com?subject=Armory%20Relay%20data%20deletion"
+                >privacy@riftscope.com</a
+              >
+              with the subject “Armory Relay data deletion”. Never include a
+              Riot password or authentication token.
+            </p>
+            <a class="action-link" href="../data-deletion/"
+              >Open the deletion guide</a
+            >
+          </section>
+
+          <section id="rights" class="policy-section">
+            <span class="section-label">07 · User control</span>
+            <h2>Your privacy rights</h2>
+            <p>
+              Depending on location, you may have rights to access, correct,
+              delete, restrict or object to processing; receive portable data;
+              and withdraw consent. Use the controls above for local data,
+              Riot's channels for Riot account data, Google and Android controls
+              for advertising data, and
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>
+              for information sent directly to the developer.
+            </p>
+            <p>
+              You may also complain to the competent data-protection authority.
+              In Spain, this is the
+              <a href="https://www.aepd.es/" rel="noopener noreferrer external"
+                >Spanish Data Protection Agency</a
+              >.
+            </p>
+
+            <h3>Children</h3>
+            <p>
+              Armory Relay is not designed for or directed at children under 13,
+              or people below the applicable minimum age for using a Riot
+              account without parental or guardian authorization. Users must
+              comply with Riot's age and account requirements. A parent or
+              guardian who believes a child sent information directly to the
+              developer may contact the privacy address above.
+            </p>
+          </section>
+
+          <section id="security" class="policy-section">
+            <span class="section-label">08 · Protection</span>
+            <h2>Security and transfers</h2>
+            <p>
+              The Android app encrypts session secrets with AES-256-GCM using a
+              non-exportable Android Keystore key. Network traffic uses
+              HTTPS/TLS. The Riot WebView runs in an isolated process, restricts
+              navigation, disables debugging and mixed content, blocks
+              screenshots on the authentication screen, and clears cookies and
+              WebView data on sign-out. Sensitive values are excluded from
+              application logs, and Android backup is disabled.
+            </p>
+            <p>
+              No measure guarantees absolute protection. Users should secure
+              their device, Riot account and email account, enable Riot
+              multi-factor authentication, and never share tokens or
+              credentials.
+            </p>
+            <p>
+              Riot, Google, GitHub, valorant-api.com and their infrastructure
+              may process technical or personal data outside your country. Their
+              own notices describe locations, safeguards and transfer
+              mechanisms. Armory Relay does not transfer Riot session or
+              storefront data to a developer-controlled backend.
+            </p>
+          </section>
+
+          <section id="contact" class="policy-section">
+            <span class="section-label">09 · Policy status</span>
+            <h2>Changes and contact</h2>
+            <p>
+              This policy may be updated when the app, its providers or legal
+              requirements change. The effective date at the top will be
+              updated, and material changes will be communicated through the app
+              or its store listing where appropriate.
+            </p>
+            <p>
+              Privacy enquiries can be sent to
+              <a href="mailto:privacy@riftscope.com">privacy@riftscope.com</a>.
+            </p>
+            <p>
+              Armory Relay is an independent community application. It is not
+              affiliated with, endorsed by, sponsored by or approved by Riot
+              Games. Riot Games, VALORANT and related names and marks belong to
+              their respective owners.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© 2026 Gerard Rey Mañas</p>
+        <p>Privacy policy · Effective 20 August 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
