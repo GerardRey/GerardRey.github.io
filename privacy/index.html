@@ -210,24 +210,14 @@
               cosmetic catalog are cached in IndexedDB.
             </p>
 
-            <h3>Wishlist and local notifications</h3>
+            <h3>Wishlist</h3>
             <p>
-              Skins added to the wishlist, the notification preference and a
-              limited delivery history are stored only on the device. After a
-              successful storefront refresh, Armory Relay compares the daily
-              offers and Night Market with that local wishlist. If a match is
-              found and Android notification permission has been granted, the
-              app can display a local notification containing the cosmetic
-              names. Delivery records use a local hash of the account reference
-              and store rotation to avoid duplicate alerts.
-            </p>
-            <p>
-              These alerts are created locally: Armory Relay does not use a
-              developer-operated push-notification server and does not include
-              Riot passwords, authentication tokens, PUUIDs or cookies in the
-              notification payload. The current version checks for matches when
-              the store is opened or refreshed; it does not poll Riot while the
-              app is completely closed.
+              Skin identifiers added to the wishlist are stored only on the
+              device. After a successful storefront refresh, Armory Relay
+              compares the daily offers and Night Market with that local
+              wishlist and displays any matches inside the app. The wishlist is
+              not sent to a developer-operated server and the app does not use
+              push or local notifications for these matches.
             </p>
 
             <h3>Google Play Billing and Armory Relay Plus</h3>
@@ -350,8 +340,8 @@
                 account session from misuse.
               </li>
               <li>
-                To save the local wishlist and notify the user when a selected
-                cosmetic is found after a storefront refresh.
+                To save the local wishlist and display a match inside the app
+                when a selected cosmetic is found after a storefront refresh.
               </li>
               <li>
                 To offer, acknowledge and restore the Armory Relay Plus
@@ -468,10 +458,8 @@
                 storage until changed, Android app-data clearing or uninstall.
               </li>
               <li>
-                <strong>Wishlist and notification records</strong><br />Wishlist
-                skin identifiers, the alert preference and recent delivery
-                records remain locally until changed, Android app-data clearing
-                or uninstall.
+                <strong>Wishlist</strong><br />Wishlist skin identifiers remain
+                locally until changed, Android app-data clearing or uninstall.
               </li>
               <li>
                 <strong>Armory Relay Plus entitlement</strong><br />The app keeps
@@ -515,10 +503,9 @@
               <li>
                 <strong>Delete all local Armory Relay data:</strong> use Android
                 <strong>App info → Storage → Clear data</strong>, or uninstall
-                the app. This removes the local wishlist, notification
-                preference and delivery records, but does not cancel or delete a
-                Google Play purchase; Armory Relay Plus can be restored with the
-                same Google Play account.
+                the app. This removes the local wishlist, but does not cancel or
+                delete a Google Play purchase; Armory Relay Plus can be restored
+                with the same Google Play account.
               </li>
             </ol>
             <p>

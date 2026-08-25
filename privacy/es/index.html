@@ -226,25 +226,15 @@
               público de cosméticos se guardan en IndexedDB.
             </p>
 
-            <h3>Wishlist y notificaciones locales</h3>
+            <h3>Wishlist</h3>
             <p>
-              Las skins añadidas a la wishlist, la preferencia de notificaciones
-              y un historial limitado de avisos se guardan únicamente en el
-              dispositivo. Después de actualizar correctamente la tienda,
-              Armory Relay compara las ofertas diarias y el Night Market con esa
-              wishlist local. Si encuentra una coincidencia y se ha concedido el
-              permiso de notificaciones de Android, puede mostrar una
-              notificación local con los nombres de los cosméticos. El historial
-              usa un hash local de la referencia de cuenta y la rotación para
-              evitar avisos duplicados.
-            </p>
-            <p>
-              Estos avisos se generan localmente: Armory Relay no utiliza un
-              servidor propio de notificaciones push ni incluye contraseñas,
-              tokens de autenticación, PUUID o cookies de Riot en la
-              notificación. La versión actual comprueba coincidencias al abrir o
-              actualizar la tienda; no consulta Riot cuando la aplicación está
-              completamente cerrada.
+              Los identificadores de skins añadidos a la wishlist se guardan
+              únicamente en el dispositivo. Después de actualizar correctamente
+              la tienda, Armory Relay compara las ofertas diarias y el Night
+              Market con esa wishlist local y muestra las coincidencias dentro
+              de la aplicación. La wishlist no se envía a un servidor del
+              desarrollador y la aplicación no utiliza notificaciones push ni
+              locales para estas coincidencias.
             </p>
 
             <h3>Google Play Billing y Armory Relay Plus</h3>
@@ -374,8 +364,9 @@
                 y la sesión frente a usos indebidos.
               </li>
               <li>
-                Para guardar la wishlist local y avisar cuando se encuentre un
-                cosmético seleccionado después de actualizar la tienda.
+                Para guardar la wishlist local y mostrar una coincidencia dentro
+                de la aplicación cuando se encuentre un cosmético seleccionado
+                después de actualizar la tienda.
               </li>
               <li>
                 Para ofrecer, reconocer y restaurar el derecho de uso de Armory
@@ -494,10 +485,9 @@
                 o desinstalar.
               </li>
               <li>
-                <strong>Wishlist y registros de notificaciones</strong><br />Los
-                identificadores de skins, la preferencia de avisos y los
-                registros recientes permanecen localmente hasta modificarlos,
-                borrar los datos Android o desinstalar.
+                <strong>Wishlist</strong><br />Los identificadores de skins
+                permanecen localmente hasta modificarlos, borrar los datos
+                Android o desinstalar.
               </li>
               <li>
                 <strong>Derecho de uso de Armory Relay Plus</strong><br />La
@@ -550,10 +540,9 @@
                   >Información de la aplicación Android → Almacenamiento →
                   Borrar datos</strong
                 >
-                o desinstala la aplicación. Esto elimina la wishlist local, la
-                preferencia de notificaciones y su historial, pero no cancela ni
-                elimina una compra de Google Play; Armory Relay Plus puede
-                restaurarse con la misma cuenta de Google Play.
+                o desinstala la aplicación. Esto elimina la wishlist local, pero
+                no cancela ni elimina una compra de Google Play; Armory Relay
+                Plus puede restaurarse con la misma cuenta de Google Play.
               </li>
             </ol>
             <p>

@@ -223,24 +223,15 @@
               cosmètics es desen a IndexedDB.
             </p>
 
-            <h3>Wishlist i notificacions locals</h3>
+            <h3>Wishlist</h3>
             <p>
-              Les skins afegides a la wishlist, la preferència de notificacions
-              i un historial limitat d'avisos es desen únicament al dispositiu.
-              Després d'actualitzar correctament la botiga, Armory Relay compara
-              les ofertes diàries i el Night Market amb aquesta wishlist local.
-              Si troba una coincidència i s'ha concedit el permís de
-              notificacions d'Android, pot mostrar una notificació local amb els
-              noms dels cosmètics. L'historial utilitza un hash local de la
-              referència del compte i la rotació per evitar avisos duplicats.
-            </p>
-            <p>
-              Aquests avisos es generen localment: Armory Relay no utilitza cap
-              servidor propi de notificacions push ni inclou contrasenyes,
-              tokens d'autenticació, PUUID o cookies de Riot a la notificació.
-              La versió actual comprova coincidències en obrir o actualitzar la
-              botiga; no consulta Riot quan l'aplicació està completament
-              tancada.
+              Els identificadors de skins afegits a la wishlist es desen
+              únicament al dispositiu. Després d'actualitzar correctament la
+              botiga, Armory Relay compara les ofertes diàries i el Night Market
+              amb aquesta wishlist local i mostra les coincidències dins de
+              l'aplicació. La wishlist no s'envia a cap servidor del
+              desenvolupador i l'aplicació no utilitza notificacions push ni
+              locals per a aquestes coincidències.
             </p>
 
             <h3>Google Play Billing i Armory Relay Plus</h3>
@@ -364,8 +355,9 @@
                 la sessió contra usos indeguts.
               </li>
               <li>
-                Per desar la wishlist local i avisar quan es trobi un cosmètic
-                seleccionat després d'actualitzar la botiga.
+                Per desar la wishlist local i mostrar una coincidència dins de
+                l'aplicació quan es trobi un cosmètic seleccionat després
+                d'actualitzar la botiga.
               </li>
               <li>
                 Per oferir, reconèixer i restaurar el dret d'ús d'Armory Relay
@@ -480,10 +472,9 @@
                 local fins a canviar-los, esborrar dades o desinstal·lar.
               </li>
               <li>
-                <strong>Wishlist i registres de notificacions</strong><br />Els
-                identificadors de skins, la preferència d'avisos i els registres
-                recents romanen localment fins a modificar-los, esborrar les
-                dades Android o desinstal·lar.
+                <strong>Wishlist</strong><br />Els identificadors de skins
+                romanen localment fins a modificar-los, esborrar les dades
+                Android o desinstal·lar.
               </li>
               <li>
                 <strong>Dret d'ús d'Armory Relay Plus</strong><br />L'aplicació
@@ -531,9 +522,8 @@
                   >Informació de l'aplicació Android → Emmagatzematge → Esborrar
                   dades</strong
                 >
-                o desinstal·la l'aplicació. Això elimina la wishlist local, la
-                preferència de notificacions i el seu historial, però no
-                cancel·la ni elimina una compra de Google Play; Armory Relay
+                o desinstal·la l'aplicació. Això elimina la wishlist local, però
+                no cancel·la ni elimina una compra de Google Play; Armory Relay
                 Plus es pot restaurar amb el mateix compte de Google Play.
               </li>
             </ol>
