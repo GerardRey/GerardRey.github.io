@@ -57,7 +57,7 @@
     <main id="main" class="page-shell">
       <section class="hero">
         <div>
-          <span class="eyebrow">Privacy policy · effective 20 August 2026</span>
+          <span class="eyebrow">Privacy policy · effective 25 August 2026</span>
           <h1>Your data stays in view.</h1>
           <p class="hero-copy">
             Armory Relay is a read-only companion with no developer-operated
@@ -89,7 +89,7 @@
           </dl>
           <dl class="fact">
             <dt>Updated</dt>
-            <dd>20 August 2026</dd>
+            <dd>25 August 2026</dd>
           </dl>
         </aside>
       </section>
@@ -210,6 +210,47 @@
               cosmetic catalog are cached in IndexedDB.
             </p>
 
+            <h3>Wishlist and local notifications</h3>
+            <p>
+              Skins added to the wishlist, the notification preference and a
+              limited delivery history are stored only on the device. After a
+              successful storefront refresh, Armory Relay compares the daily
+              offers and Night Market with that local wishlist. If a match is
+              found and Android notification permission has been granted, the
+              app can display a local notification containing the cosmetic
+              names. Delivery records use a local hash of the account reference
+              and store rotation to avoid duplicate alerts.
+            </p>
+            <p>
+              These alerts are created locally: Armory Relay does not use a
+              developer-operated push-notification server and does not include
+              Riot passwords, authentication tokens, PUUIDs or cookies in the
+              notification payload. The current version checks for matches when
+              the store is opened or refreshed; it does not poll Riot while the
+              app is completely closed.
+            </p>
+
+            <h3>Google Play Billing and Armory Relay Plus</h3>
+            <p>
+              The Android app uses Google Play Billing to offer the
+              non-consumable one-time product <code>remove_ads_lifetime</code>,
+              displayed as Armory Relay Plus. Google Play provides product
+              availability, localized price and purchase state, handles the
+              checkout and payment method, and associates the purchase with the
+              user's Google Play account. The native app transiently handles a
+              purchase token only to acknowledge the transaction with Google
+              Play; it is not sent to Angular, stored on a developer server or
+              combined with Riot account data.
+            </p>
+            <p>
+              Armory Relay receives only the information needed to determine
+              whether the product is available, pending or owned and to restore
+              that entitlement. A confirmed purchase removes advertising and
+              permits up to three locally stored Riot accounts. The developer
+              does not receive card, bank-account or other payment-method
+              details from the app.
+            </p>
+
             <h3>Demo mode</h3>
             <p>
               Demo mode creates sample store information in memory. It does not
@@ -288,9 +329,11 @@
             <p>
               Armory Relay does not request access to contacts, precise GPS
               location, camera, microphone, photos, SMS, call logs, health
-              information or payment information. It includes no proprietary
-              analytics or crash-reporting service. AdMob diagnostics remain
-              subject to the advertising disclosure above.
+              information and does not access card or bank-account details.
+              Google Play handles payment information for Armory Relay Plus as
+              described above. The app includes no proprietary analytics or
+              crash-reporting service. AdMob diagnostics remain subject to the
+              advertising disclosure above.
             </p>
           </section>
 
@@ -305,6 +348,14 @@
               <li>
                 To verify Riot-signed tokens and protect the application and
                 account session from misuse.
+              </li>
+              <li>
+                To save the local wishlist and notify the user when a selected
+                cosmetic is found after a storefront refresh.
+              </li>
+              <li>
+                To offer, acknowledge and restore the Armory Relay Plus
+                entitlement through Google Play Billing.
               </li>
               <li>To display advertising and prevent advertising fraud.</li>
               <li>To respond to support and privacy enquiries.</li>
@@ -346,6 +397,17 @@
                 <strong>Google AdMob and UMP</strong><br />Consent management,
                 advertising, analytics, delivery, measurement and fraud
                 prevention, as described above.
+              </li>
+              <li>
+                <strong>Google Play and Google Play Billing</strong><br />Product
+                catalogue, localized price, checkout, payment processing,
+                purchase acknowledgement and restoration of the Armory Relay
+                Plus entitlement. See Google's
+                <a
+                  href="https://policies.google.com/privacy"
+                  rel="noopener noreferrer external"
+                  >Privacy Policy</a
+                >.
               </li>
               <li>
                 <strong>GitHub Pages</strong><br />This policy site is hosted by
@@ -406,6 +468,18 @@
                 storage until changed, Android app-data clearing or uninstall.
               </li>
               <li>
+                <strong>Wishlist and notification records</strong><br />Wishlist
+                skin identifiers, the alert preference and recent delivery
+                records remain locally until changed, Android app-data clearing
+                or uninstall.
+              </li>
+              <li>
+                <strong>Armory Relay Plus entitlement</strong><br />The app keeps
+                the current entitlement state in memory and queries Google Play
+                again when needed. Google retains the purchase with the user's
+                Google Play account under Google's retention policies.
+              </li>
+              <li>
                 <strong>Demo data</strong><br />Remains in memory until Demo
                 mode is exited or the process ends.
               </li>
@@ -441,7 +515,10 @@
               <li>
                 <strong>Delete all local Armory Relay data:</strong> use Android
                 <strong>App info → Storage → Clear data</strong>, or uninstall
-                the app.
+                the app. This removes the local wishlist, notification
+                preference and delivery records, but does not cancel or delete a
+                Google Play purchase; Armory Relay Plus can be restored with the
+                same Google Play account.
               </li>
             </ol>
             <p>
@@ -551,7 +628,7 @@
     <footer class="site-footer">
       <div class="site-footer__inner">
         <p>© 2026 Gerard Rey Mañas</p>
-        <p>Privacy policy · Effective 20 August 2026</p>
+        <p>Privacy policy · Effective 25 August 2026</p>
       </div>
     </footer>
   </body>

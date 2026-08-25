@@ -62,7 +62,7 @@
       <section class="hero">
         <div>
           <span class="eyebrow"
-            >Política de privacitat · vigent des del 20 d'agost de 2026</span
+            >Política de privacitat · vigent des del 25 d'agost de 2026</span
           >
           <h1>Les teves dades, sempre a la vista.</h1>
           <p class="hero-copy">
@@ -95,7 +95,7 @@
           </dl>
           <dl class="fact">
             <dt>Actualitzada</dt>
-            <dd>20 d'agost de 2026</dd>
+            <dd>25 d'agost de 2026</dd>
           </dl>
         </aside>
       </section>
@@ -223,6 +223,48 @@
               cosmètics es desen a IndexedDB.
             </p>
 
+            <h3>Wishlist i notificacions locals</h3>
+            <p>
+              Les skins afegides a la wishlist, la preferència de notificacions
+              i un historial limitat d'avisos es desen únicament al dispositiu.
+              Després d'actualitzar correctament la botiga, Armory Relay compara
+              les ofertes diàries i el Night Market amb aquesta wishlist local.
+              Si troba una coincidència i s'ha concedit el permís de
+              notificacions d'Android, pot mostrar una notificació local amb els
+              noms dels cosmètics. L'historial utilitza un hash local de la
+              referència del compte i la rotació per evitar avisos duplicats.
+            </p>
+            <p>
+              Aquests avisos es generen localment: Armory Relay no utilitza cap
+              servidor propi de notificacions push ni inclou contrasenyes,
+              tokens d'autenticació, PUUID o cookies de Riot a la notificació.
+              La versió actual comprova coincidències en obrir o actualitzar la
+              botiga; no consulta Riot quan l'aplicació està completament
+              tancada.
+            </p>
+
+            <h3>Google Play Billing i Armory Relay Plus</h3>
+            <p>
+              L'aplicació Android utilitza Google Play Billing per oferir el
+              producte de compra única no consumible
+              <code>remove_ads_lifetime</code>, mostrat com Armory Relay Plus.
+              Google Play proporciona la disponibilitat, el preu localitzat i
+              l'estat de la compra, gestiona el cobrament i el mètode de pagament
+              i associa la compra al compte de Google Play. La part nativa de
+              l'aplicació tracta transitòriament un token de compra només per
+              reconèixer la transacció davant Google Play; no l'envia a Angular,
+              no el desa en cap servidor del desenvolupador ni el combina amb
+              dades del compte Riot.
+            </p>
+            <p>
+              Armory Relay rep únicament la informació necessària per saber si
+              el producte està disponible, pendent o comprat i per restaurar el
+              dret d'ús. Una compra confirmada elimina la publicitat i permet
+              fins a tres comptes Riot desats localment. El desenvolupador no
+              rep des de l'aplicació dades de targetes, comptes bancaris o altres
+              mètodes de pagament.
+            </p>
+
             <h3>Mode demostració</h3>
             <p>
               El mode demostració genera una botiga d'exemple en memòria. No
@@ -301,8 +343,10 @@
             <p>
               Armory Relay no sol·licita contactes, ubicació GPS precisa,
               càmera, micròfon, fotografies, SMS, registre de trucades, dades de
-              salut ni informació de pagament. Tampoc incorpora analítica pròpia
-              ni un servei propi d'informes d'errors. Els diagnòstics d'AdMob es
+              salut ni accedeix a dades de targetes o comptes bancaris. Google
+              Play gestiona la informació de pagament d'Armory Relay Plus segons
+              s'explica anteriorment. Tampoc incorpora analítica pròpia ni un
+              servei propi d'informes d'errors. Els diagnòstics d'AdMob es
               regeixen per la divulgació publicitària anterior.
             </p>
           </section>
@@ -318,6 +362,14 @@
               <li>
                 Per verificar tokens signats per Riot i protegir l'aplicació i
                 la sessió contra usos indeguts.
+              </li>
+              <li>
+                Per desar la wishlist local i avisar quan es trobi un cosmètic
+                seleccionat després d'actualitzar la botiga.
+              </li>
+              <li>
+                Per oferir, reconèixer i restaurar el dret d'ús d'Armory Relay
+                Plus mitjançant Google Play Billing.
               </li>
               <li>Per mostrar publicitat i prevenir frau publicitari.</li>
               <li>Per respondre consultes de suport i privacitat.</li>
@@ -358,6 +410,17 @@
                 <strong>Google AdMob i UMP</strong><br />Gestió del
                 consentiment, publicitat, analítica, lliurament, mesurament i
                 prevenció del frau.
+              </li>
+              <li>
+                <strong>Google Play i Google Play Billing</strong><br />Catàleg
+                del producte, preu localitzat, procés de compra, cobrament,
+                reconeixement i restauració del dret d'ús d'Armory Relay Plus.
+                Consulta la
+                <a
+                  href="https://policies.google.com/privacy"
+                  rel="noopener noreferrer external"
+                  >Política de privacitat de Google</a
+                >.
               </li>
               <li>
                 <strong>GitHub Pages</strong><br />Aquest lloc de privacitat
@@ -417,6 +480,18 @@
                 local fins a canviar-los, esborrar dades o desinstal·lar.
               </li>
               <li>
+                <strong>Wishlist i registres de notificacions</strong><br />Els
+                identificadors de skins, la preferència d'avisos i els registres
+                recents romanen localment fins a modificar-los, esborrar les
+                dades Android o desinstal·lar.
+              </li>
+              <li>
+                <strong>Dret d'ús d'Armory Relay Plus</strong><br />L'aplicació
+                conserva l'estat actual en memòria i torna a consultar Google
+                Play quan cal. Google conserva la compra vinculada al compte de
+                Google Play segons les seves polítiques de conservació.
+              </li>
+              <li>
                 <strong>Dades de demostració</strong><br />Romanen en memòria
                 fins a sortir del mode demostració o acabar el procés.
               </li>
@@ -456,7 +531,10 @@
                   >Informació de l'aplicació Android → Emmagatzematge → Esborrar
                   dades</strong
                 >
-                o desinstal·la l'aplicació.
+                o desinstal·la l'aplicació. Això elimina la wishlist local, la
+                preferència de notificacions i el seu historial, però no
+                cancel·la ni elimina una compra de Google Play; Armory Relay
+                Plus es pot restaurar amb el mateix compte de Google Play.
               </li>
             </ol>
             <p>
@@ -566,7 +644,7 @@
     <footer class="site-footer">
       <div class="site-footer__inner">
         <p>© 2026 Gerard Rey Mañas</p>
-        <p>Política de privacitat · Vigent des del 20 d'agost de 2026</p>
+        <p>Política de privacitat · Vigent des del 25 d'agost de 2026</p>
       </div>
     </footer>
   </body>
